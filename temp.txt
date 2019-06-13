@@ -214,7 +214,7 @@ heroku create mydjangoecmmerceapp
 
 ssh/tls
 ====================
-
+pip3 install gunicorn
 got to https://letsencrypt.org/getting-started/
 select certbot link
 select software apache and system
