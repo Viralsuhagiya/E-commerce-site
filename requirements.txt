@@ -44,7 +44,6 @@ launchpadlib==1.10.6
 lazr.restfulclient==0.13.5
 lazr.uri==1.0.3
 libsass==0.12.3
-louis==3.5.0
 lunardate==0.2.0
 lxml==3.7.1
 macaroonbakery==1.1.3
