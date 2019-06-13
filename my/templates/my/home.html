@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% extends "my/header.html" %}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Vperfectcs</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'my/css/bootstrap.min.css' %}" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    </style>
+     <style type="text/css">
+         html,
+         body{
+         height:100%
+         }
+    </style>
+    <style>
+        .navbar a {
+          background-color: grey;
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 20px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .navbar a:hover {
+          background: #ddd;
+          color: black;
+        }
+
+        </style>
+
+</head>
+
+<body>>
+
+{% block content %}
+<div class="col-sm-2">
+
+</div>
+ <div class="col-sm-2">
+    <br>
+
+</div>
+<div class="col-sm-2">
+    <br>
+    <img src="{% static 'my/img/register.jpeg' %}" class="responsive-img" style="width:100px!important;height:100px!important" alt="feature1"/>
+    <h4 align="left">Registration</h4>
+</div>
+
+ <div class="col-sm-2">
+    <br>
+    <img src="{% static 'my/img/checkin.jpeg' %}" class="responsive-img" style="width:100px!important;height:100px!important" alt="feature2"/>
+    <h4 align="left">Check In</h4>
+</div>
+
+ <div class="col-sm-2">
+    <br>
+    <img src="{% static 'my/img/checkout.jpeg' %}" class="responsive-img" style="width:100px!important;height:100px!important" alt="feature3"/>
+    <h4 align="left">Check Out</h4>
+</div>
+
+<div class="col-sm-3"><hr>
+    <br>
+</div>
+{% endblock%}
+</body>
+</html>

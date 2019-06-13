@@ -1,0 +1,10 @@
+{% extends "my/header.html" %}
+{% block content %}
+<h4>contact </h4>
+{{contact}}
+<br>
+
+{% for list in mylist %}
+    <ul>{{list}}</ul>
+{% endfor %}
+{% endblock%}

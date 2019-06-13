@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Vperfectcs</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'my/css/bootstrap.min.css' %}" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    </style>
+     <style type="text/css">
+         html,
+         body{
+         height:100%
+         }
+    </style>
+    <style>
+        .navbar a {
+          background-color: grey;
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 20px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .navbar a:hover {
+          background: #ddd;
+          color: black;
+        }
+
+        </style>
+
+</head>
+
+<body class="body" style="...">
+    <div class="container-fluid" style="...">
+        <div class="row">
+            <div class="col-sm-2">
+                <br>
+                <center>
+                    <img src="{% static 'my/img/logo1.jpeg' %}" class="responsive-img" style="width:150px!important;height:150px!important" alt="logo"/>
+                </center>
+            </div>
+            <div class="col-sm-10">
+                <br>
+                <h1 style="color:orange!important;padding-left: 100px!important;">Attendance Management System</h1>
+            </div>
+        </div>
+         <hr>
+          <div class="navbar">
+              <a href="{% url 'index' %}">Home</a>
+              <a href="/courses">Courses</a>
+              <a href="{% url 'contact' %}">Contact</a>
+              <a href="{% url 'about' %}">About us</a>
+              <a href="{% url 'addModelform' %}">Registration</a>
+              <a href="/details">News Details</a>
+              <a href="/shop">Shop</a>
+              <a href="/checkin">Check In</a>
+              <a href="/checkout">Check Out</a>
+        </div>
+
+        <div class="row">
+
+         <div class="carousel-inner" role="listbox">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid" style="...">
+            <p><a href="http://www.vperfectcs.com/" target="blank">Contact</a> | <a href="http://www.facebook.com/" target="blank">facebook</a></p>
+        </div>
+    </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+{% extends "my/header.html"%}
+{% block content %}
+    <h2>   {{post.course}}</h2>
+    <h5>{{ post.description}}</h5>
+    <h5>on {{post.date}}</h5>
+    {{post.body|safe|linebreaks}}
+{% endblock %}
