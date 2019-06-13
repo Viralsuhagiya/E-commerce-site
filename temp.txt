@@ -205,6 +205,11 @@ for post in posts_json:
 
 deploy in heroku
 ======================
+sudo snap install -classic heroku
+heroku
+heroku login
+pip install gunicorn
+
 
 git init
 
