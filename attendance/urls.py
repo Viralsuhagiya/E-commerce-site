@@ -8,7 +8,7 @@ from users import views as user_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^myfirstapp/', include('myfirstapp.urls')),
-    url(r'^', include('my.urls')),
+    # url(r'^', include('my.urls')),
     url(r'^shop/', include('shop.urls')),
     url(r'^views/', include('shop.urls')),
     url(r'^courses/', include('courses.urls')),
@@ -36,5 +36,5 @@ urlpatterns = [
                            template_name='users/password_reset_complete.html'
                        ),
                        name='password_reset_complete'),
-    url(r'^blog/', include('blog.urls')),
+    url(r'^', include('blog.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
