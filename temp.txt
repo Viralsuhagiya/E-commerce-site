@@ -1,0 +1,214 @@
+sudo /opt/lampp/lampp start
+sudo service mysql stop
+
+sudo pip3 install django
+django-admin startproject attendance_manageent
+
+python3 manage.py  runserver
+
+ ps aux | grep manage
+
+ sudo kill -9 process_id
+
+for login
+set login redirect in setting.py
+
+pip3 install djangorestframework
+django-admin startproject myproject
+
+python3 manage.py startapp name
+python3  manage.py migrate
+python manage.py makemigrations
+python3 manage.py createssuperuser
+
+
+31/
+restfull api
+http://127.0.0.1:8000/employees/
+flask
+============
+
+database
+=============
+pip3 intall mysqlclient
+create model 
+----------------
+makemigations
+migrate
+register in admin.py
+
+template
+--------------
+make directory
+create html file
+views.py
+if template does not found
+add in settings.py os.path.join(BASE_DIR, 'templates')
+
+Shell
+========
+python3 manage.py shell
+from appname*(News.models) import classname(News)
+news= News(author="viral",title="viral")
+news.save()
+insert record in databaee
+update
+news.author.update('dghd')
+news.save()
+delete
+-------
+news.delete()
+
+template inheritance
+==========
+create blockl content by jinja logic
+{% block content%} or {%block title%}
+{% lockblock %}
+inherit by
+{%extends "base.html"}
+
+context
+access by {{context var}}
+
+templates ----
+for nd if
+{% if num==100 %}
+true
+{% else %}
+false
+{{num}}
+{% endif %}
+
+
+
+render data from mysql database
+===================================
+make method in views.py
+create html file
+add url in urls
+import model class in views
+create object in method
+access data using object in template file	
+
+
+forms
+==============
+create form.py 
+create field (forms.Form)
+uri
+views create method
+create html file nd access fields
+
+
+flash messages while submiting data
+===================================
+
+
+today
+
+model form
+================
+create method view
+set url
+create html file
+create class in forms
+--import registration model 
+----class create
+import modelform class in views
+create method in views add data(urls also)
+set action in html file
+
+
+widgets in model form
+===========================
+
+
+
+postgress
+=================
+.postgres
+name:'dbname'
+'USER': 'postgres'
+'password: '1234'
+'host':'localhost'
+
+
+Reset Super User Password
+---------------------------
+mac
+python.manage.py changepassword viral
+
+codewithharry
+https://www.youtube.com/watch?v=FdVuKt_iuSI
+
+create media directory
+in setting.py
+============================================
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
+
+https://docs.djangoproject.com/en/2.1/howto/static-files/#serving-files-uploaded-by-a-user-during-development
+
+https://ssup.uidai.gov.in/ssup/updateproof.html
+
+postlistview
+========================================
+create class
+class PostListView(ListView):
+    model = Post
+    template_name = 'blog/home.html'('name of abov method'
+    context_object_name = 'posts'('dictioinary')
+    ordering = ['date_posted']
+
+
+in urls.py
+=============
+from .views import PostListView
+path('', PostListView.as_view(), name='blog-home')
+path('post/<int:pk>/', PostDetailView.as_view(), name='post-detail'),
+    path('post/new/', PostCreateView.as_view(), name='post-create'),
+    path('about/', views.about, name='blog-about'),
+Detailview
+====================
+from .views import PostListView,PostDetailView
+path('post/<int:pk>/', PostDetailView.as_view(), name='post-detail'),(create new html file)and access object using objects
+views.py
+class PostDetailView(DetailView):
+    model = Post
+create url in home.html add url
+
+Createview
+==================
+urls
+ path('post/new/', PostCreateView.as_view(), name='post-create'),
+ crete post_form.html in blog
+ create class in view
+ class PostCreateView(CreateView):
+    model = Post
+    fields = ['title','content']
+
+0000/00578/65067
+https://ssup.uidai.gov.in/checkSSUPStatus/checkupdatestatus
+
+
+import data using json
+=============================
+create file inside project folder(where the manage.py located)
+import json
+from blog.models import Post
+with open('posts.json') as f:
+    posts_json=json.load(f)
+for post in posts_json:
+    post = Post(title=post['title'],content=post['content'], author_id = post['user_id'])
+        post.save()
+
+deploy in heroku
+======================
+
+
+git init
+
+
+
+
