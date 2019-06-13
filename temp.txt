@@ -31,7 +31,7 @@ flask
 database
 =============
 pip3 intall mysqlclient
-create model 
+create model
 ----------------
 makemigations
 migrate
@@ -88,12 +88,12 @@ create html file
 add url in urls
 import model class in views
 create object in method
-access data using object in template file	
+access data using object in template file
 
 
 forms
 ==============
-create form.py 
+create form.py
 create field (forms.Form)
 uri
 views create method
@@ -112,7 +112,7 @@ create method view
 set url
 create html file
 create class in forms
---import registration model 
+--import registration model
 ----class create
 import modelform class in views
 create method in views add data(urls also)
@@ -206,8 +206,11 @@ for post in posts_json:
 deploy in heroku
 ======================
 
-
 git init
+
+heroku create mydjangoecmmerceapp
+
+
 
 
 
