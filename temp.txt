@@ -212,6 +212,14 @@ heroku create mydjangoecmmerceapp
 
 
 
+ssh/tls
+====================
+
+got to https://letsencrypt.org/getting-started/
+select certbot link
+select software apache and system
+install all package
+
 
 
 
