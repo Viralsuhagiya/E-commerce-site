@@ -209,7 +209,10 @@ sudo snap install -classic heroku
 heroku
 heroku login
 pip install gunicorn
+heroku login
+ pip freeze
 
+pip install gunicorn
 
 git init
 
