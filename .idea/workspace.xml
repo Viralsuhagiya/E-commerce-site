@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0695dc2-6eb1-43ae-91e5-3f5736438c04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfiles" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f0695dc2-6eb1-43ae-91e5-3f5736438c04" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,11 +211,6 @@
           <expand>
             <path>
               <item name="attendance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attendance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attendance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attendance" type="462c0819:PsiDirectoryNode" />
               <item name="attendance" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
