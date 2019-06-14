@@ -10,7 +10,6 @@ Click==7.0
 cryptography==2.1.4
 cycler==0.10.0
 decorator==4.0.10
-defer==1.0.6
 distro-info===0.18ubuntu0.18.04.1
 Django==2.2.1
 django-countries==5.3.3
@@ -23,7 +22,6 @@ ebaysdk==2.1.5
 ephem==3.7.6.0
 face-recognition==1.2.3
 face-recognition-models==0.3.0
-fedex==2.4.0
 feedparser==5.2.1
 Flask==1.0.3
 gevent==1.1.2
