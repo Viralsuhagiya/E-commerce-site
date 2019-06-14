@@ -74,7 +74,6 @@ pycrypto==2.6.1
 pycryptodome==3.8.2
 pycups==1.9.73
 pydot==1.2.3
-pygobject==3.26.1
 pyldap==2.4.28
 pyluach==1.0.1
 pymacaroons==0.13.0
