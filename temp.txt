@@ -211,13 +211,11 @@ heroku login
 pip install gunicorn
 heroku login
  pip freeze
-
-pip install gunicorn
-
-git init
-
 heroku create mydjangoecmmerceapp
-
+git push heroku master
+heroku open
+if web error
+create Procfikle without any extension
 
 
 ssh/tls
