@@ -215,7 +215,28 @@ heroku create mydjangoecmmerceapp
 git push heroku master
 heroku open
 if web error
-create Procfikle without any extension
+create Procfile  without any extension
+web: gunicorn attendance.wsgi
+write allowed host in seeting.py
+mydjangoecmmerceapp.herokuapp.com
+
+generate secret file
+type python3 in terminal
+import secrets
+secrets.token_hex(24)
+
+open file using terminal
+subl ~/.bash_profile
+file will be open in sublime automatic
+write
+export SECRET_KEY="0f9d8a7b0864d03189beec3b40b5ed7b422e9fa141080fd5"
+export DEBUG_VALUE="True"
+and set environment heroku using
+heroku config:set SECRET_KEY="0f9d8a7b0864d03189beec3b40b5ed7b422e9fa141080fd5"
+
+
+edit seeting.py pycharm
+SECRET_KEY="os.environ.get()"
 
 
 ssh/tls
