@@ -3,7 +3,6 @@ asn1crypto==0.24.0
 Babel==2.3.4
 bcrypt==3.1.6
 beautifulsoup4==4.7.1
-Brlapi==0.6.6
 certifi==2018.1.18
 cffi==1.12.2
 chardet==3.0.4
