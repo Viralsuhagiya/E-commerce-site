@@ -15,12 +15,9 @@ django-countries==5.3.3
 django-crispy-forms==1.7.2
 django-widget-tweaks==1.4.3
 djangorestframework==3.9.4
-dlib==19.16.0
 docutils==0.12
 ebaysdk==2.1.5
 ephem==3.7.6.0
-face-recognition==1.2.3
-face-recognition-models==0.3.0
 feedparser==5.2.1
 Flask==1.0.3
 gevent==1.1.2
