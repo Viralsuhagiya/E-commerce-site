@@ -10,7 +10,7 @@ Click==7.0
 cryptography==2.1.4
 cycler==0.10.0
 decorator==4.0.10
-Django==2.2.1
+Django==2.2.10
 django-countries==5.3.3
 django-crispy-forms==1.7.2
 django-widget-tweaks==1.4.3
