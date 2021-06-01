@@ -99,7 +99,7 @@ soupsieve==1.7.2
 sqlparse==0.3.0
 suds-jurko==0.6
 systemd-python==234
-urllib3==1.22
+urllib3==1.26.5
 vatnumber==1.2
 virtualenv==16.4.3
 vobject==0.9.3
