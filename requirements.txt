@@ -52,7 +52,7 @@ oauth==1.0.1
 ofxparse==0.16
 olefile==0.45.1
 opencv-contrib-python==4.0.0.21
-opencv-python==4.0.0.21
+opencv-python==4.2.0.32
 paramiko==2.4.2
 passlib==1.6.5
 pbr==5.1.1
