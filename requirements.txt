@@ -53,7 +53,7 @@ ofxparse==0.16
 olefile==0.45.1
 opencv-contrib-python==4.0.0.21
 opencv-python==4.0.0.21
-paramiko==2.4.2
+paramiko==2.10.1
 passlib==1.6.5
 pbr==5.1.1
 pexpect==4.2.1
